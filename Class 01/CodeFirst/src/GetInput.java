@@ -14,8 +14,14 @@ public class GetInput {
         System.out.print("Enter Integer Value: ");
         int value = sc.nextInt();
 
+        System.out.print("Enter a character: ");
+        char ch = sc.next().charAt(0);
+
+
         System.out.println("Byte Value: "+byt);
         System.out.println("Short Value: "+srt);
         System.out.println("Integer Value: "+value);
+        System.out.println("Character Value: "+ch);
+
     }
 }
