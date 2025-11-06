@@ -1,0 +1,7 @@
+
+Id: 111 Name: John CG: 3.14
+Id: 1014 Name: Elon CG: 3.5
+Id: 1015 Name: Mask CG: 3.6
+Id: 1018 Name: Mark CG: 3.9
+Id: 1023 Name: Steve CG: 3.97
+Id: 1020 Name: Angela CG: 4.0
