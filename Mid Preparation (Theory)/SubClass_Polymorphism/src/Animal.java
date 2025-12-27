@@ -10,6 +10,9 @@ public class Animal {
     void type () {
         System.out.println("Not HUMAN");
     }
+    static void stFunc (){
+        System.out.println("Hello from static func");
+    }
 }
 class Bird extends Animal {
 
@@ -18,6 +21,7 @@ class Horse extends Animal
 {
     void sleep () {
         System.out.println("Horse sleeps");
+        stFunc();
 
     }
     void run ()
