@@ -7,12 +7,16 @@ import java.util.Comparator;
 class Car {
     public String brand;
     public String model;
-    public int year;
+    private int year;
 
     public Car(String b, String m, int y) {
         brand = b;
         model = m;
         year = y;
+    }
+
+    public int getYear() {
+        return year;
     }
 }
 
@@ -24,8 +28,8 @@ class SortByYear implements Comparator <Car> {
 //        Car b = (Car) obj2;
 
         // Compare the year of both objects
-        if (obj1.year < obj2.year) return -1; // The first car has a smaller year
-        if (obj1.year > obj2.year) return 1;  // The first car has a larger year
+        if (obj1.getYear() < obj2.getYear()) return -1; // The first car has a smaller year
+        if (obj1.getYear() > obj2.getYear()) return 1;  // The first car has a larger year
         return 0; // Both cars have the same year
     }
 }
@@ -44,7 +48,7 @@ public class Main2 {
 
         // Display the cars
         for (Car c : myCars) {
-            System.out.println(c.brand + " " + c.model + " " + c.year);
+            System.out.println(c.brand + " " + c.model + " " + c.getYear());
         }
     }
 }

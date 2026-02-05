@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 class BusinessMan implements Comparable<BusinessMan>{
-    String name;
-    int rank;
+    private String name;
+    private int rank;
 
     public BusinessMan(String name, int rank) {
         this.name = name;
@@ -46,8 +46,8 @@ public class DemoQuestionSolve1 {
             Collections.sort(myList);
             System.out.println(myList);
 
-            FileWriter fw = new FileWriter("output.txt", true);
-            BufferedWriter.w = new BufferedWriter(fw);
+            FileWriter fw = new FileWriter("src/output.txt", true);
+            BufferedWriter w = new BufferedWriter(fw);
         }
         catch (Exception e) {
             e.printStackTrace();
