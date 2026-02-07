@@ -14,6 +14,14 @@ class BusinessMan implements Comparable<BusinessMan>{
         this.rank = rank;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
     @Override
     public int compareTo(BusinessMan o) {
         if (rank < o.rank) return 1;
@@ -46,8 +54,14 @@ public class DemoQuestionSolve1 {
             Collections.sort(myList);
             System.out.println(myList);
 
-            FileWriter fw = new FileWriter("src/output.txt", true);
+            FileWriter fw = new FileWriter("src/output.txt");
             BufferedWriter w = new BufferedWriter(fw);
+
+            for (int i=0; i<myList.size(); i++) {
+                w.write(myList.get(i).getName() + " " + myList.get(i).getRank());
+                w.newLine();
+            }
+            w.close();
         }
         catch (Exception e) {
             e.printStackTrace();

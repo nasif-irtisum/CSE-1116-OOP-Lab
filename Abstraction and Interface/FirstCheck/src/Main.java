@@ -3,12 +3,14 @@ abstract class Shape {
     // Abstract method
     abstract double area();
     abstract String getName();
+    abstract String getName2();
     // Concrete method
     void display() {
         System.out.println("This is a shape");
     }
 }
 abstract class Shape2 extends Shape{
+    abstract String getName2();
     public String getName (){
         return "Rob Stark";
     }
@@ -26,6 +28,10 @@ class Circle extends Shape2 {
         System.out.println ("Checking successful!");
     }
 
+    @Override
+    String getName2() {
+        return "Nothing";
+    }
 }
 
 public class Main {

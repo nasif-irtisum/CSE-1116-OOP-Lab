@@ -1,0 +1,4 @@
+(1) Apple (2) Orange (3) Banana (4) Mango 
+(5) NATO 
+(6) USA (7) UK (8) EU 
+(9) 1234 (10) 5678 
